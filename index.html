@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Bridge Distribution, Inc. — Authorized distributor of Dell, Acer, Wacom, ViewSonic, Kensington, D-Link, Boya, Brateck, Vertiv, and Epson in the Philippines."/>
+  <title>Bridge Distribution, Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a class="nav-logo" href="#" onclick="showPage('home');return false;">
+    <img src="data:image/jpeg;base64,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DpBdxbcHffdvNcrpNb4K8pXNVPTGSfHn8iNbTOLUVg+sVpJ5sSqJY2ZmOeS05hqFkdRVTWlxiNmi51B0W+STE46YVL6VjYiA7Meh2589/LXZZXYlO6N7MkfeaWk2OgOnVda/p9F/HNOqpyTaTjFLL478Z7lUXU42MSIi8uXBWcDYzgxzPqYY2QVIkex8gaXtA1Ftz02O58lGRbNrcu3m5JZysfVPt6GJLJrqHslxd8kby5j5yQ92lxm3PTqvxgy4rYyRttN8xILd+t7W9VlRZ+LnjH8Wr9zGktdoRAYY38SB1S97nS8GXOCSTc/w131Op5T4M32dU2e0AFl2l4BOvIbnlssqKyd63XlWUUspr5x0t+u+fUKO2DZhOT4h5ly5BG4uBeG3HQX5rv2hMLqiB9PJG6EwNDA03LQNLO1OvO3LQclMRQ+Mn8N8PjbOc9//AAad8lTtDLHK+h4cjH5aONrsrgbEDUac1shMTcIk+IkpA11MGsyyNdJm1IFtSNdOW/qPPorafUZwlUlpT1rBhwTwUcI4ckFVSvmjhMjQ5rpDZugOn1XHFWRx1DY45mTZWAFzNr/+W91kRVu9k7ZW+NvH5v7tmdO+TTMT8DAC8HV3dzAka9OXNIRegnOZgs5uhcATvsNysyLHxkvea8f4dP7adP2+o07YK+C8ObD6yjNVFTyS5cpldlabOB3/AHfqPEjNjsrZsXqJGSiUF3zjnp4ae2nTRYUWZ3kp26o44xv6asf7n9P3KO+T1PaGtp6uhq2tdBxY59C14u+MkFp313Og2truvOwUz5qeeZrm2hALm8yDz9PxXBFO6vnd1FOrFbJrb1bXyz9PURjpWEFppm3pKp2Zgs1uhcATryHP0WZFrUKzoy1Lwa+aa/5MtZLnZquZQ0lS972AGeEvaSLuZ3w6wO9rhYsdZEzEHNgcwxZW5csgeALW3CwIrpXs5Wyt2lhfPlv65+i8zGnfJbxZjKhstdFiMbmOjF4y+zzd18tvqfHlbVSooOJTSzcWJvDt3HOAc6/Qc1xRQr3CrVXUcd3nPPL7/wAjKWFgIiLWMhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k=" alt="Bridge Distribution, Inc."/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" id="nav-home"     class="active"  onclick="showPage('home');    return false;">Home</a></li>
+    <li><a href="#" id="nav-about"               onclick="showPage('about');   return false;">About</a></li>
+    <li><a href="#" id="nav-products"            onclick="showPage('products');return false;">Products</a></li>
+    <li><a href="#" id="nav-brand"               onclick="showPage('brand');   return false;">Brand</a></li>
+    <li><a href="#" id="nav-careers"             onclick="showPage('careers'); return false;">Careers</a></li>
+    <li><a href="#" id="nav-support"             onclick="showPage('support'); return false;">Support</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#" class="btn btn-primary" onclick="showPage('support');return false;">Get In Touch</a>
+  </div>
+  <button class="hamburger" id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <a href="#" onclick="showPage('home');    closeMobileMenu();return false;">Home</a>
+  <a href="#" onclick="showPage('about');   closeMobileMenu();return false;">About</a>
+  <a href="#" onclick="showPage('products');closeMobileMenu();return false;">Products</a>
+  <a href="#" onclick="showPage('brand');   closeMobileMenu();return false;">Brand</a>
+  <a href="#" onclick="showPage('careers'); closeMobileMenu();return false;">Careers</a>
+  <a href="#" onclick="showPage('support'); closeMobileMenu();return false;">Support</a>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PAGE: HOME                                                    -->
+<!-- ============================================================ -->
+<div id="page-home" class="page visible">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-arc-deco">
+      <svg viewBox="0 0 700 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="350" cy="300" rx="320" ry="270" stroke="white" stroke-width="1" stroke-dasharray="8 7"/>
+        <ellipse cx="350" cy="300" rx="220" ry="175" stroke="white" stroke-width="0.8" stroke-dasharray="5 10"/>
+        <path d="M 80 320 Q 220 60 490 160 T 660 310" stroke="#4d65ff" stroke-width="2.5" fill="none" opacity="0.9"/>
+        <path d="M 100 370 Q 250 100 510 200 T 660 370" stroke="#ff4d4d" stroke-width="1.8" fill="none" opacity="0.5"/>
+        <circle cx="490" cy="160" r="6" fill="#4d65ff"/>
+        <circle cx="350" cy="300" r="4" fill="white" opacity="0.4"/>
+        <circle cx="200" cy="220" r="3" fill="white" opacity="0.2"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Authorized Philippine Distributor</div>
+        <h1 class="hero-title">
+          Bridging <span class="hl-blue">Brands</span>
+          <em>To Every <span class="hl-red">Market.</span></em>
+        </h1>
+        <p class="hero-sub">
+          Bridge Distribution, Inc. is the authorized distributor for world-class IT brands across the Philippines — delivering cutting-edge technology to retailers, resellers, and enterprises nationwide.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" onclick="showPage('products');return false;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Our Brands
+          </a>
+          <a href="#" class="btn btn-outline-white" onclick="showPage('about');return false;">About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Ticker -->
+  <div class="brand-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">Dell</span>
+      <span class="ticker-item">Acer</span>
+      <span class="ticker-item">Wacom</span>
+      <span class="ticker-item">ViewSonic</span>
+      <span class="ticker-item">Kensington</span>
+      <span class="ticker-item">D-Link</span>
+      <span class="ticker-item">Boya</span>
+      <span class="ticker-item">Brateck</span>
+      <span class="ticker-item">Vertiv</span>
+      <span class="ticker-item">Epson</span>
+    </div>
+  </div>
+
+  <!-- Stats Band -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-cell reveal">
+          <div class="stat-num"><span class="counter" data-target="25">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-1">
+          <div class="stat-num"><span class="counter" data-target="10">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Global Brand Partners</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-2">
+          <div class="stat-num"><span class="counter" data-target="1200">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Distribution Points</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-3">
+          <div class="stat-num"><span class="counter" data-target="98">0</span><span class="sup">%</span></div>
+          <div class="stat-label">On-Time Delivery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="features-intro">
+        <div class="reveal">
+          <span class="tag">What We Do</span>
+          <h2 class="section-title">Built for IT.<br>Built for Scale.</h2>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="section-sub">From enterprise solutions to consumer electronics, Bridge Distribution provides end-to-end distribution services for leading technology brands — connecting manufacturers to retailers, resellers, and enterprise clients across the Philippines.</p>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🏭</div>
+          <h3>Warehousing & Logistics</h3>
+          <p>Purpose-built IT product warehousing with proper static-control environments, real-time inventory tracking, and efficient fulfillment to all channels nationwide.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">🚚</div>
+          <h3>Nationwide Distribution</h3>
+          <p>A comprehensive distribution network covering Metro Manila, provincial hubs, and key regional centers — ensuring your technology products reach every corner of the market.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🤝</div>
+          <h3>Channel Development</h3>
+          <p>We actively develop and manage a wide network of authorized resellers, system integrators, and retail partners — growing reach and brand visibility for our principals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Bridge Section -->
+  <section class="why-section">
+    <div class="container">
+      <span class="tag">Why Bridge</span>
+      <div class="why-grid">
+        <div class="why-visual-wrap reveal">
+          <div class="why-card-main">
+            <div class="why-big-num"><span>98</span>%</div>
+            <div class="why-big-label">Average on-time delivery rate across all active distribution routes</div>
+            <div style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;">
+              <span class="chip">Authorized Distributor</span>
+              <span class="chip chip-red">ISO Compliant</span>
+            </div>
+          </div>
+          <div class="why-floating-badge">⚡ 25+ Years Trusted</div>
+        </div>
+        <div>
+          <h2 class="section-title" style="margin-top:0;">The Bridge<br>Advantage</h2>
+          <div class="why-points">
+            <div class="why-point reveal reveal-delay-1">
+              <div class="why-point-icon">🏆</div>
+              <div>
+                <h4>Official Brand Partnerships</h4>
+                <p>We hold authorized distributor status for each brand we carry — ensuring genuine products, valid warranties, and full manufacturer support for every customer.</p>
+              </div>
+            </div>
+            <div class="why-point reveal reveal-delay-2">
+              <div class="why-point-icon">🔗</div>
+              <div>
+                <h4>Deep Channel Relationships</h4>
+                <p>Decades of established relationships with major retailers, IT mall chains, e-commerce platforms, and corporate procurement teams across the Philippines.</p>
+              </div>
+            </div>
+            <div class="why-point reveal reveal-delay-3">
+              <div class="why-point-icon">📞</div>
+              <div>
+                <h4>Dedicated After-Sales Support</h4>
+                <p>A responsive support team to assist with warranty claims, product inquiries, and technical escalations — protecting your investment and your customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <span class="tag" style="justify-content:center;display:flex;margin-bottom:14px;">Partner With Us</span>
+      <h2 class="section-title">Ready to Bring Your<br>Brand to the Philippines?</h2>
+      <p class="section-sub">Whether you're a global technology brand seeking market entry or an established principal looking to expand your channel — Bridge Distribution has the network and expertise to make it happen.</p>
+      <div class="cta-btn-row">
+        <a href="#" class="btn btn-primary" onclick="showPage('support');return false;">Contact Our Team</a>
+        <a href="#" class="btn btn-outline-white" onclick="showPage('products');return false;">View Our Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ============================================================ -->
+<!-- PAGE: ABOUT                                                   -->
+<!-- ============================================================ -->
+<div id="page-about" class="page hidden">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Our Story</span>
+      <h1 class="section-title">About Bridge<br>Distribution</h1>
+      <p class="section-sub">For over 25 years, Bridge Distribution, Inc. has been the trusted link between world-class technology brands and the Filipino market — built on integrity, powered by expertise.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="about-story">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="reveal">
+          <h2>Connecting Technology<br>to Every Filipino</h2>
+          <p>Bridge Distribution, Inc. was founded with a singular vision: to be the most reliable and professional technology distributor in the Philippines. From our earliest days as a regional IT distributor in Metro Manila, we have steadily grown our operations, our people, and our brand partnerships to serve the entire country.</p>
+          <p>Our portfolio today spans the most respected names in the IT industry — from computing and enterprise infrastructure to creative peripherals, displays, networking, audio equipment, and printing solutions.</p>
+          <div class="about-quote">
+            <p>"We don't just distribute products. We build the bridges that connect world-class technology to every Filipino — in every city, every store, every home."</p>
+          </div>
+          <p>Today, Bridge Distribution is recognized by our principal brands and channel partners alike as a distributor that delivers on its commitments — every order, every time.</p>
+          <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-primary" onclick="showPage('support');return false;">Partner With Us</a>
+            <a href="#" class="btn btn-outline" onclick="showPage('products');return false;">View Portfolio</a>
+          </div>
+        </div>
+        <div class="timeline reveal reveal-delay-1">
+          <div class="tl-item">
+            <div class="tl-dot">●</div>
+            <div>
+              <div class="tl-year">Foundation</div>
+              <h4>Bridge Distribution Founded</h4>
+              <p>Established in Metro Manila with a mission to deliver quality IT products to the Philippine market through professional distribution channels.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">●</div>
+            <div>
+              <div class="tl-year">Growth Phase</div>
+              <h4>Expanding Our Brand Portfolio</h4>
+              <p>Secured authorized distributor agreements with major global IT brands, significantly expanding our product range across multiple technology categories.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">●</div>
+            <div>
+              <div class="tl-year">Expansion</div>
+              <h4>National Coverage Achieved</h4>
+              <p>Extended distribution network beyond Luzon to the Visayas and Mindanao regions, establishing Bridge Distribution as a truly national distributor.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">●</div>
+            <div>
+              <div class="tl-year">Modernization</div>
+              <h4>Digital & Operational Upgrades</h4>
+              <p>Invested in ERP systems, real-time inventory management, and logistics technology to increase efficiency and service levels for partners.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot red-dot">●</div>
+            <div>
+              <div class="tl-year">Today</div>
+              <h4>Trusted IT Distribution Leader</h4>
+              <p>Proudly distributing 10+ leading IT brands across 1,200+ distribution points nationwide, with a team committed to excellence every single day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Our Values</span>
+        <h2 class="section-title">The Principles<br>We Stand By</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-num">01</div>
+          <h4>Integrity</h4>
+          <p>We operate with full transparency and honor every commitment to our brand partners, channel customers, and employees.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-num">02</div>
+          <h4>Excellence</h4>
+          <p>We pursue the highest standards in service delivery, logistics accuracy, and customer support — without compromise.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-3">
+          <div class="value-num">03</div>
+          <h4>Partnership</h4>
+          <p>We grow together with our principals and resellers. Long-term relationships built on trust are the foundation of our business.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-4">
+          <div class="value-num">04</div>
+          <h4>Innovation</h4>
+          <p>We embrace new technologies, processes, and market strategies to stay ahead and provide maximum value to our stakeholders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section class="team-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Leadership</span>
+        <h2 class="section-title">Our Leaders</h2>
+        <p class="section-sub">Experienced industry professionals driving the strategy and operations of Bridge Distribution, Inc.</p>
+      </div>
+      <div class="team-grid" style="grid-template-columns: repeat(2,1fr); max-width: 600px;">
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-photo">👤</div>
+          <div class="team-info">
+            <h4>Ruther Ng</h4>
+            <div class="team-role">President</div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-photo">👤</div>
+          <div class="team-info">
+            <h4>Mannix Lim</h4>
+            <div class="team-role">Vice President</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-about -->
+
+
+<!-- ============================================================ -->
+<!-- PAGE: PRODUCTS                                                -->
+<!-- ============================================================ -->
+<div id="page-products" class="page hidden">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Our Portfolio</span>
+      <h1 class="section-title">Brands We<br>Distribute</h1>
+      <p class="section-sub">Bridge Distribution is the authorized Philippine distributor for 10 world-class IT brands spanning computing, displays, networking, peripherals, audio, and infrastructure.</p>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="products-filter reveal">
+        <button class="filter-btn active"   onclick="filterBrands('all',          this)">All Brands</button>
+        <button class="filter-btn"          onclick="filterBrands('computing',    this)">Computing</button>
+        <button class="filter-btn"          onclick="filterBrands('displays',     this)">Displays & Imaging</button>
+        <button class="filter-btn"          onclick="filterBrands('networking',   this)">Networking</button>
+        <button class="filter-btn"          onclick="filterBrands('peripherals',  this)">Peripherals</button>
+        <button class="filter-btn"          onclick="filterBrands('audio',        this)">Audio & AV</button>
+        <button class="filter-btn"          onclick="filterBrands('infra',        this)">Infrastructure</button>
+      </div>
+
+      <!-- Brand Cards Grid -->
+      <div class="brands-grid" id="brands-grid">
+
+        <!-- Dell -->
+        <div class="brand-card reveal" data-cat="computing">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#e8ecff,#dde3ff);">
+            <span class="brand-logo-text" style="color:#0076ce;">DELL</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Computing &bull; Enterprise IT</div>
+            <h3>Dell Technologies</h3>
+            <p>Laptops, desktops, workstations, servers, and enterprise storage solutions. From consumer Inspiron and XPS lines to business-grade Latitude, OptiPlex, and PowerEdge systems.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Acer -->
+        <div class="brand-card reveal reveal-delay-1" data-cat="computing">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#fff2e8,#ffe8d5);">
+            <span class="brand-logo-text" style="color:#83b81a;">Acer</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Computing &bull; Displays</div>
+            <h3>Acer Inc.</h3>
+            <p>A broad range of laptops, all-in-one PCs, gaming rigs (Predator / Nitro), Chromebooks, tablets, and monitors. Ideal for consumers, students, professionals, and gamers alike.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Wacom -->
+        <div class="brand-card reveal reveal-delay-2" data-cat="peripherals">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#f0f0f5,#e5e5ee);">
+            <span class="brand-logo-text" style="color:#1a1a2e;">Wacom</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Creative Peripherals</div>
+            <h3>Wacom</h3>
+            <p>The world's leading brand in pen tablets, pen displays, and stylus technology. Products for creative professionals, digital artists, designers, and content creators — including Intuos, Cintiq, and One series.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- ViewSonic -->
+        <div class="brand-card reveal" data-cat="displays">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#e8f5ff,#d5ecff);">
+            <span class="brand-logo-text" style="color:#e4002b;font-size:1.9rem;">ViewSonic</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Displays &bull; Projectors</div>
+            <h3>ViewSonic</h3>
+            <p>Professional monitors, interactive displays, projectors, and digital signage solutions. Trusted by enterprises, schools, and multimedia professionals for over three decades.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Kensington -->
+        <div class="brand-card reveal reveal-delay-1" data-cat="peripherals">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#fff5e5,#ffe8c0);">
+            <span class="brand-logo-text" style="color:#e8760a;font-size:1.6rem;">Kensington</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Peripherals &bull; Security</div>
+            <h3>Kensington</h3>
+            <p>Premium laptop locks, ergonomic accessories, docking stations, mice, and keyboard solutions. Kensington is the global benchmark for workplace productivity and device security.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- D-Link -->
+        <div class="brand-card reveal reveal-delay-2" data-cat="networking">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#e8efff,#d5e2ff);">
+            <span class="brand-logo-text" style="color:#003087;">D-Link</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Networking</div>
+            <h3>D-Link</h3>
+            <p>Routers, switches, access points, IP cameras, and network storage for home, SMB, and enterprise environments. Complete networking infrastructure from a globally recognized brand.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Boya -->
+        <div class="brand-card reveal" data-cat="audio">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#fff0f0,#ffdcdc);">
+            <span class="brand-logo-text" style="color:#c00;">BOYA</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Audio &bull; AV Equipment</div>
+            <h3>Boya</h3>
+            <p>Professional microphones, wireless audio systems, and recording accessories trusted by content creators, videographers, podcasters, and live streamers worldwide.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Brateck -->
+        <div class="brand-card reveal reveal-delay-1" data-cat="peripherals">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#f0f8f0,#ddf0dd);">
+            <span class="brand-logo-text" style="color:#2a7a2a;">Brateck</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Mounting Solutions</div>
+            <h3>Brateck</h3>
+            <p>Monitor arms, TV wall mounts, laptop stands, desk mounts, and ergonomic accessories. Brateck delivers durable, versatile mounting solutions for modern workspaces and home setups.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Vertiv -->
+        <div class="brand-card reveal reveal-delay-2" data-cat="infra">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#eef5ff,#dde8ff);">
+            <span class="brand-logo-text" style="color:#006fcf;font-size:2.2rem;">Vertiv</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Power &bull; Data Center Infrastructure</div>
+            <h3>Vertiv</h3>
+            <p>UPS systems, power distribution units, thermal management, rack systems, and critical infrastructure solutions for data centers, telecom facilities, and enterprise IT environments.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- Epson -->
+        <div class="brand-card reveal" data-cat="displays">
+          <div class="brand-card-header" style="background:linear-gradient(135deg,#fff5f5,#ffe8e8);">
+            <span class="brand-logo-text" style="color:#003087;">Epson</span>
+          </div>
+          <div class="brand-card-body">
+            <div class="brand-cat">Printing &bull; Imaging</div>
+            <h3>Epson</h3>
+            <p>Inkjet printers, EcoTank systems, laser printers, POS receipt printers, label printers, scanners, projectors, and large-format printing solutions for home, office, and commercial use.</p>
+          </div>
+          <div class="brand-card-footer">
+            <span class="chip">Authorized Distributor</span>
+            <a href="#" onclick="showPage('support');return false;">Inquire →</a>
+          </div>
+        </div>
+
+      </div><!-- /brands-grid -->
+    </div>
+  </section>
+
+</div><!-- /page-products -->
+
+
+<!-- ============================================================ -->
+<!-- PAGE: BRAND                                                   -->
+<!-- ============================================================ -->
+<div id="page-brand" class="page hidden">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Identity</span>
+      <h1 class="section-title">Brand Guidelines</h1>
+      <p class="section-sub">These guidelines define how the Bridge Distribution brand is presented across all touchpoints — ensuring consistency, clarity, and a strong visual identity.</p>
+    </div>
+  </section>
+
+  <section class="brand-guide-section">
+    <div class="container">
+      <div class="brand-guide-grid">
+
+        <!-- Logo Usage -->
+        <div class="guide-block reveal">
+          <h3><span class="icon-badge">🎨</span> Logo Usage</h3>
+          <div class="logo-display-dark">
+            <img src="data:image/jpeg;base64,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DpBdxbcHffdvNcrpNb4K8pXNVPTGSfHn8iNbTOLUVg+sVpJ5sSqJY2ZmOeS05hqFkdRVTWlxiNmi51B0W+STE46YVL6VjYiA7Meh2589/LXZZXYlO6N7MkfeaWk2OgOnVda/p9F/HNOqpyTaTjFLL478Z7lUXU42MSIi8uXBWcDYzgxzPqYY2QVIkex8gaXtA1Ftz02O58lGRbNrcu3m5JZysfVPt6GJLJrqHslxd8kby5j5yQ92lxm3PTqvxgy4rYyRttN8xILd+t7W9VlRZ+LnjH8Wr9zGktdoRAYY38SB1S97nS8GXOCSTc/w131Op5T4M32dU2e0AFl2l4BOvIbnlssqKyd63XlWUUspr5x0t+u+fUKO2DZhOT4h5ly5BG4uBeG3HQX5rv2hMLqiB9PJG6EwNDA03LQNLO1OvO3LQclMRQ+Mn8N8PjbOc9//AAad8lTtDLHK+h4cjH5aONrsrgbEDUac1shMTcIk+IkpA11MGsyyNdJm1IFtSNdOW/qPPorafUZwlUlpT1rBhwTwUcI4ckFVSvmjhMjQ5rpDZugOn1XHFWRx1DY45mTZWAFzNr/+W91kRVu9k7ZW+NvH5v7tmdO+TTMT8DAC8HV3dzAka9OXNIRegnOZgs5uhcATvsNysyLHxkvea8f4dP7adP2+o07YK+C8ObD6yjNVFTyS5cpldlabOB3/AHfqPEjNjsrZsXqJGSiUF3zjnp4ae2nTRYUWZ3kp26o44xv6asf7n9P3KO+T1PaGtp6uhq2tdBxY59C14u+MkFp313Og2truvOwUz5qeeZrm2hALm8yDz9PxXBFO6vnd1FOrFbJrb1bXyz9PURjpWEFppm3pKp2Zgs1uhcATryHP0WZFrUKzoy1Lwa+aa/5MtZLnZquZQ0lS972AGeEvaSLuZ3w6wO9rhYsdZEzEHNgcwxZW5csgeALW3CwIrpXs5Wyt2lhfPlv65+i8zGnfJbxZjKhstdFiMbmOjF4y+zzd18tvqfHlbVSooOJTSzcWJvDt3HOAc6/Qc1xRQr3CrVXUcd3nPPL7/wAjKWFgIiLWMhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k=" alt="Bridge Distribution Inc. Logo"/>
+          </div>
+          <div class="do-dont-grid" style="margin-top:20px;">
+            <div class="do-box">
+              <h5>✓ Do</h5>
+              <ul>
+                <li>Use on dark backgrounds</li>
+                <li>Maintain clear space</li>
+                <li>Scale proportionally</li>
+                <li>Use approved color versions</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <h5>✗ Don't</h5>
+              <ul>
+                <li>Stretch or distort the logo</li>
+                <li>Change brand colors</li>
+                <li>Add drop shadows or effects</li>
+                <li>Place on busy backgrounds</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color Palette -->
+        <div class="guide-block reveal reveal-delay-1">
+          <h3><span class="icon-badge">🖌</span> Color Palette</h3>
+          <div class="palette">
+            <div class="color-row">
+              <div class="swatch" style="background:#1428e0;box-shadow:0 3px 14px rgba(20,40,224,0.35);"></div>
+              <div>
+                <div class="swatch-name">Bridge Blue</div>
+                <div class="swatch-codes"><span>HEX #1428E0</span><span>RGB 20, 40, 224</span></div>
+              </div>
+            </div>
+            <div class="color-row">
+              <div class="swatch" style="background:#d41212;box-shadow:0 3px 14px rgba(212,18,18,0.35);"></div>
+              <div>
+                <div class="swatch-name">Bridge Red</div>
+                <div class="swatch-codes"><span>HEX #D41212</span><span>RGB 212, 18, 18</span></div>
+              </div>
+            </div>
+            <div class="color-row">
+              <div class="swatch" style="background:#07070f;border:1px solid #ddd;"></div>
+              <div>
+                <div class="swatch-name">Deep Black</div>
+                <div class="swatch-codes"><span>HEX #07070F</span><span>Primary Dark / Nav BG</span></div>
+              </div>
+            </div>
+            <div class="color-row">
+              <div class="swatch" style="background:#ffffff;border:1px solid #ddd;"></div>
+              <div>
+                <div class="swatch-name">White</div>
+                <div class="swatch-codes"><span>HEX #FFFFFF</span><span>Primary Background</span></div>
+              </div>
+            </div>
+            <div class="color-row">
+              <div class="swatch" style="background:#444466;"></div>
+              <div>
+                <div class="swatch-name">Muted Navy</div>
+                <div class="swatch-codes"><span>HEX #444466</span><span>Secondary Text</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="guide-block reveal">
+          <h3><span class="icon-badge">Aa</span> Typography</h3>
+          <div class="type-display">
+            <div class="type-row">
+              <div class="type-meta">Display / Headings — Barlow Condensed</div>
+              <div class="t-h1">Barlow Condensed</div>
+              <div class="type-meta" style="margin-top:6px;">Weight 900 · Uppercase · Used for all hero and section titles</div>
+            </div>
+            <div class="type-row">
+              <div class="type-meta">Sub-headings — Barlow Condensed</div>
+              <div class="t-h2">Section Label</div>
+              <div class="type-meta" style="margin-top:6px;">Weight 700 · Used for card headings and sub-titles</div>
+            </div>
+            <div class="type-row">
+              <div class="type-meta">Body Copy — Sora</div>
+              <div class="t-body">Sora is a clean, geometric sans-serif that ensures excellent readability across digital screens. Used for all paragraph text, captions, and UI labels at weights 300–600.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Voice -->
+        <div class="guide-block reveal reveal-delay-1">
+          <h3><span class="icon-badge">💬</span> Brand Voice</h3>
+          <p style="color:var(--text2);font-size:0.90rem;line-height:1.82;margin-bottom:22px;">Bridge Distribution communicates with the clarity and confidence of a trusted expert — professional, direct, and approachable without being corporate or cold.</p>
+          <div class="voice-grid">
+            <div class="voice-item">
+              <div class="voice-label">Confident</div>
+              <p>Lead with strengths. State facts clearly. Back all claims with real performance and genuine expertise.</p>
+            </div>
+            <div class="voice-item">
+              <div class="voice-label">Trustworthy</div>
+              <p>Plain language. No hollow marketing speak. We honor every word we put in writing and every promise made to partners.</p>
+            </div>
+            <div class="voice-item">
+              <div class="voice-label">Forward-Moving</div>
+              <p>Active voice. Present tense. Bridge is always moving forward — our language should reflect that energy and momentum.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-brand -->
+
+
+<!-- ============================================================ -->
+<!-- PAGE: CAREERS                                                 -->
+<!-- ============================================================ -->
+<div id="page-careers" class="page hidden">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Join Our Team</span>
+      <h1 class="section-title">Build Your Career<br>With Bridge</h1>
+      <p class="section-sub">We're always looking for driven, talented professionals to join our growing team. Be part of a company that values people, rewards performance, and is heading places.</p>
+      <div style="margin-top:28px;">
+        <a href="#jobs" class="btn btn-primary" onclick="document.getElementById('jobs-section').scrollIntoView({behavior:'smooth'});return false;">See Open Positions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture -->
+  <section class="culture-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Culture</span>
+        <h2 class="section-title">A Place Where<br>People Thrive</h2>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-card reveal reveal-delay-1">
+          <span class="culture-emoji">🚀</span>
+          <h3>Growth-Oriented</h3>
+          <p>We invest in our people through structured training, mentorship programs, and clear career pathways that align with your professional goals.</p>
+        </div>
+        <div class="culture-card reveal reveal-delay-2">
+          <span class="culture-emoji">🤝</span>
+          <h3>Team-Driven</h3>
+          <p>From operations to sales to management, we work as one united team — sharing wins, solving challenges together, and supporting each other every step of the way.</p>
+        </div>
+        <div class="culture-card reveal reveal-delay-3">
+          <span class="culture-emoji">🌟</span>
+          <h3>Merit-Based</h3>
+          <p>Hard work and results are recognized and rewarded here. We have a culture of performance and appreciation where your contributions genuinely matter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits / Perks -->
+  <section class="perks-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Benefits</span>
+        <h2 class="section-title">What We Offer</h2>
+      </div>
+      <div class="perks-grid">
+        <div class="perk-item reveal">
+          <div class="perk-icon">💰</div>
+          <div>
+            <h5>Competitive Salary</h5>
+            <p>Market-rate compensation with performance bonuses and merit-based annual increases.</p>
+          </div>
+        </div>
+        <div class="perk-item reveal reveal-delay-1">
+          <div class="perk-icon">🏥</div>
+          <div>
+            <h5>HMO Coverage</h5>
+            <p>Comprehensive health maintenance coverage for you and your qualified dependents.</p>
+          </div>
+        </div>
+        <div class="perk-item reveal reveal-delay-2">
+          <div class="perk-icon">📚</div>
+          <div>
+            <h5>Learning &amp; Development</h5>
+            <p>Access to product training, industry seminars, and certification programs relevant to your role.</p>
+          </div>
+        </div>
+        <div class="perk-item reveal">
+          <div class="perk-icon">🌴</div>
+          <div>
+            <h5>Paid Leaves</h5>
+            <p>Generous vacation and sick leave credits plus statutory special leave benefits.</p>
+          </div>
+        </div>
+        <div class="perk-item reveal reveal-delay-1">
+          <div class="perk-icon">📈</div>
+          <div>
+            <h5>Career Advancement</h5>
+            <p>Defined growth paths with internal promotion opportunities prioritized over external hires.</p>
+          </div>
+        </div>
+        <div class="perk-item reveal reveal-delay-2">
+          <div class="perk-icon">🎉</div>
+          <div>
+            <h5>Team Events</h5>
+            <p>Regular company outings, team-building activities, and year-end celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Listings -->
+  <section class="jobs-section" id="jobs-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Open Positions</span>
+        <h2 class="section-title">We're Hiring</h2>
+        <p class="section-sub">Join a team of dedicated professionals shaping the future of IT distribution in the Philippines.</p>
+      </div>
+      <div class="jobs-list">
+
+        <div class="job-card reveal">
+          <div class="job-info">
+            <div class="job-dept">Sales &amp; Business Development</div>
+            <h3>Key Account Manager – IT Channels</h3>
+            <div class="job-meta">
+              <span>Quezon City, Metro Manila</span>
+              <span>Full-Time</span>
+              <span>Experienced Level</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('support');return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card reveal reveal-delay-1">
+          <div class="job-info">
+            <div class="job-dept">Logistics &amp; Operations</div>
+            <h3>Warehouse Supervisor</h3>
+            <div class="job-meta">
+              <span>Quezon City, Metro Manila</span>
+              <span>Full-Time</span>
+              <span>Experienced Level</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('support');return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card reveal reveal-delay-2">
+          <div class="job-info">
+            <div class="job-dept">Finance &amp; Accounting</div>
+            <h3>Accounting Associate</h3>
+            <div class="job-meta">
+              <span>Quezon City, Metro Manila</span>
+              <span>Full-Time</span>
+              <span>Junior–Mid Level</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('support');return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card reveal reveal-delay-3">
+          <div class="job-info">
+            <div class="job-dept">Information Technology</div>
+            <h3>IT / Systems Administrator</h3>
+            <div class="job-meta">
+              <span>Quezon City, Metro Manila</span>
+              <span>Full-Time</span>
+              <span>Mid Level</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('support');return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card reveal reveal-delay-4">
+          <div class="job-info">
+            <div class="job-dept">Marketing &amp; Brand</div>
+            <h3>Brand Activations &amp; Marketing Officer</h3>
+            <div class="job-meta">
+              <span>Quezon City, Metro Manila</span>
+              <span>Full-Time</span>
+              <span>Junior–Mid Level</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('support');return false;">Apply Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-careers -->
+
+
+<!-- ============================================================ -->
+<!-- PAGE: SUPPORT                                                 -->
+<!-- ============================================================ -->
+<div id="page-support" class="page hidden">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">We're Here to Help</span>
+      <h1 class="section-title">Support &amp;<br>Contact</h1>
+      <p class="section-sub">Whether you're an existing partner, a prospective reseller, or a customer with a warranty inquiry — our team is ready to assist you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Channels -->
+  <section class="channels-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Get In Touch</span>
+        <h2 class="section-title">How Can We Help?</h2>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card reveal reveal-delay-1">
+          <div class="channel-icon">📞</div>
+          <h3>Phone</h3>
+          <p>Speak directly with our team during regular business hours. Available Monday to Friday, 8AM–5PM.</p>
+          <div class="channel-detail">+63-2-87810581</div>
+        </div>
+        <div class="channel-card reveal reveal-delay-2">
+          <div class="channel-icon">📍</div>
+          <h3>Visit Our Office</h3>
+          <p>Walk-ins and scheduled meetings welcome. Please contact us in advance to arrange your visit.</p>
+          <div class="channel-detail" style="font-size:12px;letter-spacing:0.03em;">265 E Rodriguez Sr. Ave,<br>Quezon City, 1113 Metro Manila</div>
+        </div>
+        <div class="channel-card reveal reveal-delay-3">
+          <div class="channel-icon">🌐</div>
+          <h3>Social Media</h3>
+          <p>Follow us on LinkedIn and Facebook for product updates, announcements, and company news.</p>
+          <div style="display:flex;gap:10px;justify-content:center;margin-top:4px;">
+            <a href="https://www.linkedin.com/company/bridgedisty/about/" target="_blank" class="btn btn-outline" style="padding:8px 16px;font-size:12px;">LinkedIn</a>
+            <a href="https://www.facebook.com/bridgedisty/" target="_blank" class="btn btn-outline" style="padding:8px 16px;font-size:12px;">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">FAQ</span>
+        <h2 class="section-title">Frequently Asked<br>Questions</h2>
+      </div>
+      <div class="faq-accordion">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>What IT brands does Bridge Distribution carry?</span>
+            <div class="faq-arrow">▼</div>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Bridge Distribution is the authorized Philippine distributor for Dell, Acer, Wacom, ViewSonic, Kensington, D-Link, Boya, Brateck, Vertiv, and Epson. Our portfolio spans computing, displays, networking, peripherals, audio equipment, mounting solutions, printing, and data center infrastructure.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>How do I become an authorized reseller or channel partner?</span>
+            <div class="faq-arrow">▼</div>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">To apply as an authorized reseller or channel partner, please contact our Sales team using the form below or call us directly at +63-2-87810581. Our team will schedule a business assessment and walk you through the requirements and onboarding process for each brand you're interested in carrying.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Where is your office and what are your business hours?</span>
+            <div class="faq-arrow">▼</div>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Our head office is located at 265 E Rodriguez Sr. Ave, Quezon City, 1113 Metro Manila. We are open Monday to Friday, 8:00 AM to 5:00 PM. Scheduled visits outside these hours may be arranged by contacting us in advance.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>How do I file a warranty claim for a product I purchased?</span>
+            <div class="faq-arrow">▼</div>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Warranty claims are handled through our dedicated after-sales support team. Please contact us via phone or the inquiry form below with your proof of purchase, product serial number, and a description of the issue. We will provide instructions on the appropriate service or return process for the specific brand involved.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Do you offer volume pricing or corporate procurement solutions?</span>
+            <div class="faq-arrow">▼</div>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes. We work with corporate procurement teams, government agencies, and educational institutions for volume and project-based purchases. Please reach out to our Key Account team via the contact form or phone for a tailored quotation and to discuss partnership terms.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="tag">Contact Us</span>
+        <h2 class="section-title">Send Us a Message</h2>
+      </div>
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info-list reveal">
+          <div class="contact-info-item">
+            <div class="ci-icon">🏢</div>
+            <div class="ci-info">
+              <h5>Office Address</h5>
+              <p>265 E Rodriguez Sr. Ave<br>Quezon City, 1113<br>Metro Manila, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">📞</div>
+            <div class="ci-info">
+              <h5>Phone</h5>
+              <p><a href="tel:+63287810581">+63-2-87810581</a></p>
+              <p style="font-size:0.82rem;color:var(--text3);margin-top:3px;">Mon–Fri, 8AM–5PM</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">🔗</div>
+            <div class="ci-info">
+              <h5>Social Media</h5>
+              <p>
+                <a href="https://www.linkedin.com/company/bridgedisty/about/" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
+                <a href="https://www.facebook.com/bridgedisty/" target="_blank">Facebook</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">🕐</div>
+            <div class="ci-info">
+              <h5>Business Hours</h5>
+              <p>Monday – Friday<br>8:00 AM – 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal reveal-delay-1">
+          <form class="cform" id="contact-form">
+            <div class="form-row2">
+              <div class="fgroup">
+                <label>First Name</label>
+                <input type="text" placeholder="Juan" required/>
+              </div>
+              <div class="fgroup">
+                <label>Last Name</label>
+                <input type="text" placeholder="Dela Cruz" required/>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label>Email Address</label>
+              <input type="email" placeholder="juan@example.com" required/>
+            </div>
+            <div class="fgroup">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+63 9XX XXX XXXX"/>
+            </div>
+            <div class="fgroup">
+              <label>Company / Organization</label>
+              <input type="text" placeholder="Your company name"/>
+            </div>
+            <div class="fgroup">
+              <label>Inquiry Type</label>
+              <select required>
+                <option value="">Select inquiry type...</option>
+                <option>Become a Reseller / Channel Partner</option>
+                <option>Product Inquiry — Dell</option>
+                <option>Product Inquiry — Acer</option>
+                <option>Product Inquiry — Wacom</option>
+                <option>Product Inquiry — ViewSonic</option>
+                <option>Product Inquiry — Kensington</option>
+                <option>Product Inquiry — D-Link</option>
+                <option>Product Inquiry — Boya</option>
+                <option>Product Inquiry — Brateck</option>
+                <option>Product Inquiry — Vertiv</option>
+                <option>Product Inquiry — Epson</option>
+                <option>Warranty / After-Sales Support</option>
+                <option>Careers</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label>Message</label>
+              <textarea placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn" style="width:100%;justify-content:center;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-support -->
+
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="data:image/jpeg;base64,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DpBdxbcHffdvNcrpNb4K8pXNVPTGSfHn8iNbTOLUVg+sVpJ5sSqJY2ZmOeS05hqFkdRVTWlxiNmi51B0W+STE46YVL6VjYiA7Meh2589/LXZZXYlO6N7MkfeaWk2OgOnVda/p9F/HNOqpyTaTjFLL478Z7lUXU42MSIi8uXBWcDYzgxzPqYY2QVIkex8gaXtA1Ftz02O58lGRbNrcu3m5JZysfVPt6GJLJrqHslxd8kby5j5yQ92lxm3PTqvxgy4rYyRttN8xILd+t7W9VlRZ+LnjH8Wr9zGktdoRAYY38SB1S97nS8GXOCSTc/w131Op5T4M32dU2e0AFl2l4BOvIbnlssqKyd63XlWUUspr5x0t+u+fUKO2DZhOT4h5ly5BG4uBeG3HQX5rv2hMLqiB9PJG6EwNDA03LQNLO1OvO3LQclMRQ+Mn8N8PjbOc9//AAad8lTtDLHK+h4cjH5aONrsrgbEDUac1shMTcIk+IkpA11MGsyyNdJm1IFtSNdOW/qPPorafUZwlUlpT1rBhwTwUcI4ckFVSvmjhMjQ5rpDZugOn1XHFWRx1DY45mTZWAFzNr/+W91kRVu9k7ZW+NvH5v7tmdO+TTMT8DAC8HV3dzAka9OXNIRegnOZgs5uhcATvsNysyLHxkvea8f4dP7adP2+o07YK+C8ObD6yjNVFTyS5cpldlabOB3/AHfqPEjNjsrZsXqJGSiUF3zjnp4ae2nTRYUWZ3kp26o44xv6asf7n9P3KO+T1PaGtp6uhq2tdBxY59C14u+MkFp313Og2truvOwUz5qeeZrm2hALm8yDz9PxXBFO6vnd1FOrFbJrb1bXyz9PURjpWEFppm3pKp2Zgs1uhcATryHP0WZFrUKzoy1Lwa+aa/5MtZLnZquZQ0lS972AGeEvaSLuZ3w6wO9rhYsdZEzEHNgcwxZW5csgeALW3CwIrpXs5Wyt2lhfPlv65+i8zGnfJbxZjKhstdFiMbmOjF4y+zzd18tvqfHlbVSooOJTSzcWJvDt3HOAc6/Qc1xRQr3CrVXUcd3nPPL7/wAjKWFgIiLWMhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k=" alt="Bridge Distribution, Inc."/>
+        <p>Authorized Philippine distributor of world-class IT brands — connecting technology to businesses, resellers, and consumers nationwide since 1999.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/bridgedisty/about/" target="_blank" class="social-btn" title="LinkedIn">in</a>
+          <a href="https://www.facebook.com/bridgedisty/" target="_blank" class="social-btn" title="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('about');return false;">About Us</a></li>
+          <li><a href="#" onclick="showPage('brand');return false;">Brand Guidelines</a></li>
+          <li><a href="#" onclick="showPage('careers');return false;">Careers</a></li>
+          <li><a href="#" onclick="showPage('support');return false;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Our Brands</h5>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('products');return false;">Dell</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">Acer</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">Wacom</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">ViewSonic</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">Kensington</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">D-Link</a></li>
+          <li><a href="#" onclick="showPage('products');return false;">Boya &bull; Brateck &bull; Vertiv &bull; Epson</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-links">
+          <li><a href="tel:+63287810581">+63-2-87810581</a></li>
+          <li><a href="#">265 E Rodriguez Sr. Ave</a></li>
+          <li><a href="#">Quezon City, 1113</a></li>
+          <li><a href="#">Metro Manila, Philippines</a></li>
+          <li style="margin-top:8px;"><a href="https://www.linkedin.com/company/bridgedisty/about/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/bridgedisty/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Bridge Distribution, Inc. All rights reserved.</span>
+      <span>265 E Rodriguez Sr. Ave, Quezon City, 1113 Metro Manila &nbsp;|&nbsp; +63-2-87810581</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
